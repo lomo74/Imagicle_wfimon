@@ -1,0 +1,6 @@
+.vs/
+Win32/
+x64/
+Win32/
+x64/
+*.vcxproj.user

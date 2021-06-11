@@ -1,0 +1,4 @@
+LIBRARY wfimonui
+
+EXPORTS
+	InitializePrintMonitorUI

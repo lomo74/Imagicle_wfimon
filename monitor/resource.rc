@@ -1,0 +1,62 @@
+/*
+WFIMON - Imagicle print2fax port monitor
+Copyright (C) 2021 Lorenzo Monti
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 3
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+#include <windows.h>
+#include "..\common\version.h"
+
+/*
+*    VERSION INFORMATION
+*
+*/
+1       VERSIONINFO
+        FILEVERSION             nVersion
+        PRODUCTVERSION          nVersion
+        FILEFLAGSMASK           0x3fL
+#ifdef _DEBUG
+        FILEFLAGS               VS_FF_DEBUG
+#else
+        FILEFLAGS               0x0L
+#endif
+        FILEOS                  VOS__WINDOWS32
+        FILETYPE                VFT_DLL
+        FILESUBTYPE             0x0L
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "04090000"
+    BEGIN
+      VALUE "Comments", "Released under the terms of the GNU General Public License\0"
+      VALUE "CompanyName", "Lorenzo Monti\0"
+      VALUE "FileDescription", "Imagicle print2fax port monitor\0"
+      VALUE "FileVersion", szVersion
+      VALUE "InternalName", "WFIMON\0"
+      VALUE "LegalCopyright", "Copyright © 2021 Lorenzo Monti\0"
+      VALUE "LegalTrademarks", "\0"
+      VALUE "OriginalFilename", "WFIMON.DLL\0"
+      VALUE "PrivateBuild", "\0"
+      VALUE "ProductName", "WFIMON\0"
+      VALUE "ProductVersion", szVersion
+      VALUE "SpecialBuild", "\0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 0x0L
+  END
+END
